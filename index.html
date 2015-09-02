@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div data-antn="block">
+    <h1>The Nose</h1>
+    <span>By Nikolai Gogol</span><br>
+    <span>Translated by Claud Field</span>
+
+    <h2 style="text-align:center;">I</h2>
+
+    <p data-antn="paragraph">
+    <div data-antn="question-1-annotation">What kind of nonfiction writing often begins by stating the date and location of an event?</div>
+    <a href="#" onclick="annotationClick()" data-antn="question-1-inline">On the 25th March, 18—, a very strange occurrence took place in St Petersburg.</a>
+    On the Ascension Avenue there lived a barber of the name of Ivan Jakovlevitch. He had lost his family name, and on his sign-board, on which was depicted the head of a gentleman with one cheek soaped, the only inscription to be read was, "Blood-letting done here."
+    </p>
+    <p data-antn="paragraph">
+    <div data-antn="question-2-annotation">Jakovlevitch sits up in bed and sees his wife working by the oven. From this description, what can you guess about the size of his apartment? Do you think he is wealthy, poor, or somewhere in between?</div>
+    <a href="#" onclick="annotationClick()" data-antn="question-2-inline">On this particular morning he awoke pretty early. Becoming aware of the smell of fresh-baked bread, he sat up a little in bed, and saw his wife, who had a special partiality for coffee, in the act of taking some fresh-baked bread out of the oven.</a>
+    </p>
+    <p data-antn="paragraph">"Today, Prasskovna Ossipovna," he said, "I do not want any coffee; I should like a fresh loaf with onions."</p>
+    <p data-antn="paragraph">
+    <div data-antn="question-3-annotation">From what you've read so far, how would you describe the relationship between Jakovlevitch and his wife?</div>
+    <a href="#" onclick="annotationClick()" data-antn="question-3-inline">"The blockhead may eat bread only as far as I am concerned," said his wife to herself; "then I shall have a chance of getting some coffee." And she threw a loaf on the table.</a>
+    </p>
+    <p data-antn="paragraph">For the sake of propriety, Ivan Jakovlevitch drew a coat over his shirt, sat down at the table, shook out some salt for himself, prepared two onions, assumed a serious expression, and began to cut the bread. After he had cut the loaf in two halves, he looked, and to his great astonishment saw something whitish sticking in it. He carefully poked round it with his knife, and felt it with his finger.</p>
+    <p data-antn="paragraph">"Quite firmly fixed!" he murmured in his beard. "What can it be?"</p>
+    <p data-antn="paragraph">He put in his finger, and drew out — a nose!</p>
+
+    <div data-antn="annotations">
+
+    </div>
+
+</div>
+
+<script>
+    function annotationClick() {
+        var antns = document.querySelectorAll('[data-antn="block"] [data-antn^="question"]');
+        // unselect all
+        for (var i = 0, n = antns.length; i < n; ++i) {
+            antns[i].addEventListener('click', function (e) {
+                var antns = document.querySelectorAll('[data-antn="block"] [data-antn^="question"]');
+                for(var i = 0, n = antns.length; i < n; ++i) {
+                    antns[i].setAttribute('data-antn-selected', '');
+                }
+                e.target.setAttribute('data-antn-selected', 'selected');
+                e.target.previousSibling.setAttribute('data-antn-selected', 'selected');
+            });
+        }
+    }
+
+</script>
+
+</body>
+</html>
