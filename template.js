@@ -67,7 +67,7 @@ define(function () {
             annotationBuilder += content.instruction;
         }
         annotationBuilder = '<div data-antn-type="callout" data-antn-index="'+ index +'">'+ annotationBuilder +'</div>';
-        annotationBuilder += '<span data-antn-type="inline" data-antn-index="'+ index +'">'+ content.text + '</span>';
+        annotationBuilder += '<a data-antn-type="inline" data-antn-index="'+ index +'">'+ content.text + '</a>';
         return annotationBuilder;
     }
 
