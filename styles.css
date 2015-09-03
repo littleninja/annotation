@@ -15,6 +15,19 @@
 [data-antn$="annotation"] {
     display: none;
 }
+
+/*type instaed of nth child*/
+[data-antn$="annotation"]:nth-of-type(odd) {
+    left: 100px;
+}
+
+[data-antn$="annotation"]:nth-of-type(even) {
+    right: 100px;
+}
+
 [data-antn$="annotation"][data-antn-selected="selected"] {
-    display: block;
+    position: absolute;
+    display: inline-block;
+    width: 300px;
+    min-height: 100px;
 }
