@@ -7,7 +7,7 @@ define([
 
         init: function (config) {
             this._container = document.getElementById('container');
-            this._container.innerHTML = Template.addBlock(config.annotation.contents);
+            this._container.insertAdjacentHTML('beforeEnd', Template.addBlock(config.annotation.contents));
             this._annotations = this._getAnnotations(Template.count);
             this._addEventListeners();
         },

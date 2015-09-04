@@ -2,16 +2,16 @@
 [data-antn-type="block"] {
     width: 500px;
     margin: 0 auto;
-    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
-    letter-spacing: 0.01em;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    opacity: 0.87;
 }
 [data-antn-type="marker"] {
     text-align: center;
 }
 [data-antn-type="inline"] {
-    background-color: rgba(255,20,147,0.3);
+    color: #FF6F00;
     text-decoration: none;
-    color: inherit;
+    /*color: inherit;*/
 }
 [data-antn-type="callout"] {
     display: none;

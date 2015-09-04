@@ -7,14 +7,14 @@ define({
             },
             body: [
                 {
-                    marker: 'I'
+                    marker: '\u2160'
                 },
                 [
                     {
                         text: 'On the 25th March, 18--, a very strange occurrence took place in St Petersburg.',
                         question: ''
                     },
-                    'On the Ascension Avenue there lived a barber of the name of Ivan Jakovlevitch. He had lost his family name, and on his sign-board, on which was depicted the head of a gentleman with one cheek soaped, the only inscription to be read was, "Blood-letting done here."'
+                    '  On the Ascension Avenue there lived a barber of the name of Ivan Jakovlevitch. He had lost his family name, and on his sign-board, on which was depicted the head of a gentleman with one cheek soaped, the only inscription to be read was, "Blood-letting done here."'
                 ],
                 [
                     {

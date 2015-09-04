@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-<div id="container"></div>
+<div id="container">
+    <div id="google_translate_element"></div><script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true}, 'google_translate_element');
+    }
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
 <script data-main="./app" src="libs/require.js"></script>
 
 </body>
