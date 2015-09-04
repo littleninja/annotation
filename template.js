@@ -62,7 +62,7 @@ define(function () {
         if (content.hasOwnProperty('question')) {
             _hasQuestions = true;
             annotationBuilder += content.question;
-            annotationBuilder += '<input type="text" data-antn-index="+ index +"/>';
+            annotationBuilder += '<textarea data-antn-type="input" data-antn-index="+ index +"></textarea>';
         } else {
             annotationBuilder += content.instruction;
         }

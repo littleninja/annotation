@@ -12,14 +12,14 @@ define({
                 [
                     {
                         text: 'On the 25th March, 18--, a very strange occurrence took place in St Petersburg.',
-                        question: ''
+                        question: 'What kind of nonfiction writing often begins by stating the date and location of an event?'
                     },
                     '  On the Ascension Avenue there lived a barber of the name of Ivan Jakovlevitch. He had lost his family name, and on his sign-board, on which was depicted the head of a gentleman with one cheek soaped, the only inscription to be read was, "Blood-letting done here."'
                 ],
                 [
                     {
                         text: 'On this particular morning he awoke pretty early. Becoming aware of the smell of fresh-baked bread, he sat up a little in bed, and saw his wife, who had a special partiality for coffee, in the act of taking some fresh-baked bread out of the oven. ',
-                        question: ''
+                        question: 'Jakovlevitch sits up in bed and sees his wife working by the oven. From this description, what can you guess about the size of his apartment? Do you think he is wealthy, poor, or somewhere in between?'
                     }
                 ],
                 [
@@ -28,7 +28,7 @@ define({
                 [
                     {
                         text: '"The blockhead may eat bread only as far as I am concerned," said his wife to herself; "then I shall have a chance of getting some coffee." And she threw a loaf on the table.',
-                        question: ''
+                        question: 'From what you\'ve read so far, how would you describe the relationship between Jakovlevitch and his wife?'
                     }
                 ],
                 [
