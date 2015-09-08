@@ -53,7 +53,7 @@ define(function () {
                 paragraphBuilder += contents[i];
             }
         }
-        return '<p data-antn-type="paragraph">'+ paragraphBuilder +'</p>';
+        return '<div data-antn-type="paragraph">'+ paragraphBuilder +'</div>';
     }
 
     function addAnnotation (content) {
