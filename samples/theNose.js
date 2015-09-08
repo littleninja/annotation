@@ -1,5 +1,6 @@
 define({
     annotation: {
+        id: 'the-nose',
         contents: {
             header: {
                 title: 'The Nose',

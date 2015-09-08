@@ -21,7 +21,7 @@ define(function () {
         if (_hasQuestions) {
             bodyBuilder = '<form>'+ bodyBuilder + '</form>';
         }
-        return '<div data-antn-type="block">'+ headerBuilder + bodyBuilder +'</div>';
+        return '<div data-antn-type="annotation">'+ headerBuilder + bodyBuilder +'</div>';
     }
 
     function addHeader (header) {
@@ -62,7 +62,7 @@ define(function () {
         if (content.hasOwnProperty('question')) {
             _hasQuestions = true;
             annotationBuilder += content.question;
-            annotationBuilder += '<textarea data-antn-type="input" data-antn-index="+ index +"></textarea>';
+            annotationBuilder += '<textarea data-antn-type="input" data-antn-index="'+ index +'"></textarea>';
         } else {
             annotationBuilder += content.instruction;
         }
