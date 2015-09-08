@@ -1,6 +1,6 @@
 define([
     './template',
-    './samples/theNose'
+    './samples/theNose' //theMetamorphosis
 ], function (Template, config) {
 
     var Annotation = {
