@@ -1,7 +1,8 @@
 define([
     './template',
-    './samples/theNose' //theMetamorphosis
-], function (Template, config) {
+    './samples/theNose',
+    './samples/theMetamorphosis' //theMetamorphosis
+], function (Template, theNoseCfg, theMetaCfg) {
 
     var Annotation = {
 
@@ -90,7 +91,6 @@ define([
                     next = inlineElems[+index + 1];
 
                     inline.removeAttribute('data-antn-next');
-
                     if (next) {
                         next.setAttribute('data-antn-next', '');
                     }
@@ -155,10 +155,21 @@ define([
 
     };
 
-    window.Annotation = Annotation;
 
+    window.Annotation = Annotation;
     window.onload = function () {
-        Annotation.init(config);
+        Annotation.init(theNoseCfg);
+    };
+
+    //this can be done better
+    document.getElementById('nose').onclick = function(){
+        Annotation.destroy();
+        Annotation.init(theNoseCfg);
+    };
+
+    document.getElementById('meta').onclick = function(){
+        Annotation.destroy();
+        Annotation.init(theMetaCfg);
     };
 
     return Annotation;

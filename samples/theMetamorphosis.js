@@ -1,6 +1,3 @@
-/**
- * Created by john.larosa on 9/8/15.
- */
 define({
     annotation: {
         id: 'the-metamorphosis',
@@ -26,7 +23,7 @@ define({
                 question: 'Define invald'
 
                         },
-                        'and it took him long, long minutes to crawl across his room - crawling over the ceiling was out of the question - but this deterioration in his condition was fully (in his opinion) made up for by the door to the living room being left open every evening. He got into the habit of closely watching it for one or two hours before it was opened and then, lying in the darkness of his room where he could not be seen from the living room, he could watch the family in the light of the dinner table and listen to their conversation - with everyone\'s permission, in a way, and thus quite differently from before.',
+                        'and it took him long, long minutes to crawl across his room - crawling over the ceiling was out of the question - but this deterioration in his condition was fully (in his opinion) made up for by the door to the living room being left open every evening. He got into the habit of closely watching it for one or two hours before it was opened and then, lying in the darkness of his room where he could not be seen from the living room, he could watch the family in the light of the dinner table and listen to their conversation - with everyone\'s permission, in a way, and thus quite differently from before.'
                 ]
             ]
         }
