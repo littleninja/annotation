@@ -43,6 +43,15 @@
     width: 98%;
     min-height: 100px;
 }
+
+/** CSS3 Animations **/
+[data-antn-type="annotation"] {
+    -webkit-animation: fadeIn 1200ms;
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; margin-top: 25%; }
+    to { opacity: 1; margin-top: 0; }
+}
 [data-antn-next] {
     -webkit-animation-duration: 4s;
     -webkit-animation-name: glow;
